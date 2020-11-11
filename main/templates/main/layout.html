@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
+	<meta name="keywords" content="">
+	<meta name="description" content="Temporal Games — Game Development, AI Research & Deployment">
+	<meta name="title" content="Temporal Games">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'main/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'main/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'main/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'main/img/favicon/site.webmanifest' %}">
+	<link rel="mask-icon" href="{% static 'main/img/favicon/safari-pinned-tab.svg' color="#5bbad5" %}">
+	<link rel="shortcut icon" href="{% static 'main/img/favicon/favicon.ico' %}">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="{% static 'main/img/favicon/browserconfig.xml' %}">
+	<meta name="theme-color" content="#ffffff">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{% static 'main/css/reset.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/swiper-bundle.min.css' %}">
+</head>
+  {% block body %}
+<body>
+  <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+	{% endblock %}
+</html>
