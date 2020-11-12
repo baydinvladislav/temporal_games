@@ -7,4 +7,5 @@ urlpatterns = [
     path('vfx_artist', views.vfx_artist, name='vfx_artist'),
     path('ui_designer', views.ui_designer, name='ui_designer'),
     path('data_scientist', views.data_scientist, name='data_scientist'),
+    path('riflecore', views.riflecore, name='riflecore'),
 ]
